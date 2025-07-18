@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital de recuperacion deportiva</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Encabezado */
+        header {
+            background: #7ad3d3;
+            color: #fdfefe;
+            padding-top: 20px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        header nav ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        header nav ul li {
+            display: inline;
+            padding: 0 15px;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header nav a:hover {
+            color: #1abc9c;
+            font-weight: bold;
+        }
+
+        /* Contenido principal */
+        main {
+            padding: 20px 0;
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        section {
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 20px;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        section h2 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Formularios */
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        form label {
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        form button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+            border-top: #77aaff 3px solid;
+        }
+
+        /* Estilos para listas en servicios */
+        #servicios ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        #servicios ul li {
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        li {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        li:hover {
+            background-color: #e9ecef;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            /* Elimina el espacio entre los bordes */
+        }
+
+        th,
+        td {
+            border: 1px solid #333;
+            /* Color y estilo del borde */
+            padding: 10px;
+            /* Espaciado interno */
+            text-align: left;
+            /* Alinear texto a la izquierda */
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>HOSPITAL DE RECUPERACION DEPORTIVA <br>
+            <h1>"LALIGA"</h1>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca-de">Acerca de</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#hospitalForm">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>CENTRO DE FISIOTERAPIA, REHABILITACION Y TRAUMATOLOGIA A DEPORTISTAS DE ALTO RENDIMIENTO</h2>
+            <p>En el Hospital de Recuperacion Deportiva "LALIGA" somos un grupo de especialistas certificados dedicados
+                al tratamiento integral de las lesiones musculoesqueléticas y la medicina deportiva.</p>
+            <img src="img1.jpg" alt="">
+        </section>
+
+        <audio id="backgroundMusic" src="/PRESENTACIÓN CLÍNICA DEPORTIVA.mp3" autoplay loop>
+    Tu navegador no soporta audio.
+</audio>
+<button id="playBtn">▶ Reanudar</button>
+<button id="pauseBtn">⏸ Pausar</button>
+
+        </div>
+        </header>
+
+        <section id="acerca-de">
+            <h2>Acerca de Nosotros</h2>
+            <p>Hospital de Deporte: Promoviendo la Salud y el Rendimiento</p>
+            <p>La Clínica de Deporte es un referente en atención integral para deportistas y personas activas. Su misión
+                es promover la salud y el bienestar a través de la actividad física, ofreciendo servicios que mejoran el
+                rendimiento y facilitan la recuperación. Realizan evaluaciones exhaustivas que incluyen análisis
+                biomecánico y pruebas de condición física, permitiendo la elaboración de planes de tratamiento
+                personalizados.
+
+                La fisioterapia es fundamental en su enfoque, utilizando técnicas avanzadas como terapia manual y
+                electroterapia para aliviar el dolor y mejorar la movilidad. Los médicos especializados tratan lesiones
+                agudas y crónicas, ofreciendo tanto tratamientos no quirúrgicos como intervenciones mínimamente
+                invasivas.
+
+                El equipo de nutricionistas proporciona asesoría personalizada y los psicólogos deportivos ayudan a los
+                atletas a manejar el estrés y mejorar la motivación. Las instalaciones cuentan con tecnología de última
+                generación, asegurando un entorno óptimo para la salud y el rendimiento.
+
+                La clínica también se enfoca en la prevención de lesiones mediante programas educativos y talleres. Con
+                un equipo de profesionales dedicados, la Clínica de Deporte se convierte en el aliado ideal para
+                alcanzar objetivos deportivos y disfrutar de una vida activa y saludable.</p>
+            <title>Horario de Atención Semanal</title>
+
+
+
+            <h1>Horario de Atención Semanal</h1>
+            <ul>
+                <li>Lunes: 8:00 AM - 8:00 PM</li>
+                <li>Martes: 8:00 AM - 8:00 PM</li>
+                <li>Miércoles: 8:00 AM - 8:00 PM</li>
+                <li>Jueves: 8:00 AM - 8:00 PM</li>
+                <li>Viernes: 8:00 AM - 8:00 PM</li>
+                <li>Sábados: 9:00 AM - 2:00 PM</li>
+                <li>Domingos: Cerrado</li>
+            </ul>
+        </section>
+
+        <section id="servicios">
+            <h2>Nuestros Servicios</h2>
+                <table>
+                    <tr>
+                        <th>FISIOTERAPIA</th>
+                        <th>REHABILITACION</th>
+                        <th>TRAUMATOLOGIA</th>
+                    </tr>
+                    <tr>
+                        <td style="width: 300px;"> <img src="img2.jpg" alt=""></td>
+                        <td style="width: 300px;"> <img src="img3.jpg" alt=""></td>
+                        <td style="width: 300px;"> <img src="img4.jpg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Los fisioterapeutas de la clínica están especializados en la rehabilitación de lesiones
+                            deportivas. Utilizan técnicas como terapia manual, electroterapia y ejercicios específicos
+                            para facilitar una recuperación efectiva.</td>
+                        <td>La rehabilitación deportiva es un proceso diseñado para ayudar a los atletas y personas
+                            activas a recuperarse de lesiones relacionadas con el deporte. Este tipo de rehabilitación
+                            se centra en restaurar la función física, reducir el dolor y prevenir futuras lesiones,
+                            permitiendo al individuo volver a su nivel óptimo de rendimiento.</td>
+                        <td>La traumatología deportiva es una rama de la medicina que se especializa en el diagnóstico,
+                            tratamiento y prevención de lesiones relacionadas con la actividad física y el deporte. Los
+                            traumatólogos deportivos son médicos capacitados para abordar lesiones agudas y crónicas que
+                            afectan a atletas y personas activas.</td>
+                    </tr>
+                </table>
+                <h1></h1>
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/gUrDDR_lUR4?si=0GhxIJAyvrKzIg8d"
+                    controls>
+                </iframe>
+                <html lang="es">
+
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Formulario LALIGA</title>
+                </head>
+
+                <body>
+                    <form id="hospitalForm">
+                        <h2>Formulario de Hospital Deportivo</h2>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad" required>
+
+                        <label for="deporte">Deporte:</label>
+                        <input type="text" id="deporte" name="deporte" required>
+
+                        <label for="lesion">Descripción de la lesión:</label>
+                        <textarea id="lesion" name="lesion" required></textarea>
+
+                        <label for="contacto">Email de contacto:</label>
+                        <input type="email" id="contacto" name="contacto" required>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+
+                    <script>
+                        document.getElementById('hospitalForm').addEventListener('submit', function (event) {
+                            event.preventDefault();
+                            alert('Formulario enviado correctamente. ¡Gracias!');
+                            this.reset(); // Limpia el formulario después de enviar
+                        });
+                    </script>
+                </body>
+
+
+                <footer>
+                    <p>&copy; CORREO TELEFONO DIRRECION</p>
+                </footer>
+<script>
+    // Obtener el elemento de audio y los botones
+    const audio = document.getElementById('backgroundMusic');
+    const playBtn = document.getElementById('playBtn');
+    const pauseBtn = document.getElementById('pauseBtn');
+
+    // Evento para reproducir el audio al hacer clic en el botón "Reanudar"
+    playBtn.addEventListener('click', function () {
+        audio.play();
+    });
+
+    // Evento para pausar el audio al hacer clic en el botón "Pausar"
+    pauseBtn.addEventListener('click', function () {
+        audio.pause();
+    });
+</script>
+</body>
+
+</html>
